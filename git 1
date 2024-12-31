@@ -1,0 +1,117 @@
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~ (master)
+$ pwd
+/c/Users/prarthana
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~ (master)
+$ mkdir cu010
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~ (master)
+$ cd cu010
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010 (master)
+$ git config -- global user.name "prarthana"
+error: key does not contain a section: global
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010 (master)
+$ git config --global user.name "prarthana"
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010 (master)
+$ git config --global user.email "prarthana@gmail.com"
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010 (master)
+$ git init
+Initialized empty Git repository in C:/Users/prarthana/cu010/.git/
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010 (master)
+$ touch file0.txt
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010 (master)
+$ notepad file0.txt
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010 (master)
+$ gitt addfile0.txt
+bash: gitt: command not found
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010 (master)
+$ git addfile0.txt
+git: 'addfile0.txt' is not a git command. See 'git --help'.
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file0.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010 (master)
+$ git  add file0.txt
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file0.txt
+
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010 (master)
+$ git commit --m "this is my first commit"
+[master (root-commit) 9f40e9d] this is my first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file0.txt
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010 (master)
+$ git log
+commit 9f40e9dfabdebaca7ed2a86dc499403c757f9fd4 (HEAD -> master)
+Author: prarthana <prarthana@gmail.com>
+Date:   Tue Dec 31 18:36:13 2024 +0530
+
+    this is my first commit
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010 (master)
+$ touch file1.txt
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010 (master)
+$ notepad file1.txt
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010 (master)
+$ git add file1.txt
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   file1.txt
+
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010 (master)
+$ git commit --m "this is my second commit"
+[master a37368d] this is my second commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file1.txt
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010 (master)
+$ git log
+commit a37368d34e63af75cbe9494d4cb637c4ddf91f07 (HEAD -> master)
+Author: prarthana <prarthana@gmail.com>
+Date:   Tue Dec 31 18:37:33 2024 +0530
+
+    this is my second commit
+
+commit 9f40e9dfabdebaca7ed2a86dc499403c757f9fd4
+Author: prarthana <prarthana@gmail.com>
+Date:   Tue Dec 31 18:36:13 2024 +0530
+
+    this is my first commit
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010 (master)
+
