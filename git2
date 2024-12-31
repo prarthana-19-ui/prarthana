@@ -1,0 +1,59 @@
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010 (master)
+$ cd cy010
+bash: cd: cy010: No such file or directory
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010 (master)
+$ mkdir cy010
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010 (master)
+$ cd cy010
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010/cy010 (master)
+$ git config --global user.name "prarthana"
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010/cy010 (master)
+$ git config --global user.email "prarthanarokhde@gmail.com"
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010/cy010 (master)
+$ git checkout -b feature-branch
+Switched to a new branch 'feature-branch'
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010/cy010 (feature-branch)
+$ git commit-m "update f1"
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010/cy010 (feature-branch)
+$ git commit -m"update f1"
+On branch feature-branch
+nothing to commit, working tree clean
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010/cy010 (feature-branch)
+$ touch file1.txt
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010/cy010 (feature-branch)
+$ notepad file1.txt
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010/cy010 (feature-branch)
+$ git add file1.txt
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010/cy010 (feature-branch)
+$ git commit -m "update f2"
+[feature-branch 48117eb] update f2
+ 1 file changed, 1 insertion(+)
+ create mode 100644 cy010/file1.txt
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010/cy010 (feature-branch)
+$ git checkout master
+Switched to branch 'master'
+
+prarthana@LAPTOP-RJVNCH2O MINGW64 ~/cu010/cy010 (master)
+$ git merge feature-branch
+Updating a37368d..48117eb
+Fast-forward
+ cy010/file1.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 cy010/file1.txt
